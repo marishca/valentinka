@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap');
+@media screen and (max-width:1200px) {
+    .fleft w30 {display:none}
+    .heart_container {display:none}
+    .row__item {display:none}
+}
+
+body > div.content_wrapper {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.row > .row__item {
+    display: inline-block;
+}
+
+.w30 {
+    width: 30%;
+}
+
+.w70 {
+    width: 70%;
+}
+
+.fletft {
+    float: left;
+}
+
+.fright {
+    float: right;
+}
+
+body {
+    font-family: "Montserrat", "Helvetica", sans-serif; 
+    background-color: #344e84;
+    color: white;
+}
+
+.main_title {
+    text-align: center;
+    margin-top: 1em;
+    font-size: 4em;
+}
+
+.question_title {
+    font-size: 2em;
+    text-align: left;
+}
+
+@keyframes beat {
+    0% {
+        transform: scale(1) rotate(225deg);
+        box-shadow: 0 0 40px #d5093c;
+    }
+    50% {
+        transform: scale(1.1) rotate(225deg);
+        box-shadow: 0 0 70px #d5093c;
+    }
+    100% {
+        transform: scale(1) rotate(225deg);
+        box-shadow: 0 0 40px #d5093c;
+    }
+}
+
+.heart_container {
+    position: fixed;
+    width: 500px;
+    height: 500px;
+}
+
+.heart {
+    position: absolute;
+    z-index: 2;
+    background: linear-gradient(-90deg, #F50A45 0%, #d5093c 40%);
+    animation: beat 0.7s ease 0s infinite normal;
+}
+
+.heart.center {
+    background: linear-gradient(-45deg, #B80734 0%, #d5093c 40%);
+}
+
+.heart.top {
+    z-index: 3;
+}
+
+.heart.side {
+    top: 0px;
+    width: 220px;
+    height: 220px;
+    border-radius: 220px;
+}
+
+.heart.center {
+    width: 210px;
+    height: 210px;
+    bottom: 200px;
+    left: 145px;
+    font-size: 0;
+    text-indent: -9999px;
+}
+
+.heart.left {
+    left: 62px;
+}
+
+.heart.right {
+    right: 62px;
+}
+
+.button_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.glow-button {
+    margin-top: 15%;
+    text-decoration: none;
+    padding: 1em 1.5em;
+    border-radius: 2em;
+    box-shadow: 0 0 40px 40px #B80734 inset, 0 0 0 0 #B80734;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.7em;
+    color: white;
+    letter-spacing: 0.1em;
+    transition: .15s ease-in-out;
+    outline: none;
+}
+
+.glow-button1 {
+    text-decoration: none;
+    padding: 1em 1.5em;
+    border-radius: 2em;
+    box-shadow: 0 0 40px 40px #B80734 inset, 0 0 0 0 #B80734;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    color: white;
+    letter-spacing: 0.1em;
+    transition: .15s ease-in-out;
+    outline: none;
+}
+
+.glow-button:hover {
+    box-shadow: 0 0 10px 0 #B80734 inset, 0 0 10px 4px #B80734;
+    background: white;
+    color: #B80734;
+}
+
+.glow-button1:hover {
+    box-shadow: 0 0 10px 0 #B80734 inset, 0 0 10px 4px #B80734;
+    background: white;
+    color: #B80734;
+}
+
+.reasons{
+    
+}
+
+p{
+    font-size: 1em;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+pre{
+    font-size: 1em;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input{
+    border-radius: 1em;
+    height: 30px;
+    outline: none;
+}
+
+#love{
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.7em;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.zag{
+    text-align: justify;
+}
